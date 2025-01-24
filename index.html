@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HLS Video Player</title>
+    <link href="https://vjs.zencdn.net/7.13.3/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/7.13.3/video.min.js"></script>
+</head>
+<body>
+    <video
+      id="my-video"
+      class="video-js"
+      controls
+      preload="auto"
+      width="640"
+      height="264"
+      data-setup='{}'>
+      <source src="playlist" type="application/x-mpegURL">
+    </video>
+
+    <script>
+      var player = videojs('my-video');
+    </script>
+</body>
+</html>
